@@ -30,3 +30,8 @@ X = X[:,1:]
 from sklearn.cross_validation import train_test_split
 
 X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size = 0.2, random_state = 0)
+
+#Fitting Multiple Linear Regression to the Training set
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train,Y_train)
